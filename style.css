@@ -3,7 +3,7 @@ html{
   width:100%;
 }
 header {
-  background-image: url("https://lh3.googleusercontent.com/soNf4ZVM1QQQA1-mZPEuwDMNpu5dKsRZkMLtPcLom1-fMBZvsFLnexgSQMDrv146fqLhqGOb0ZA7q2M=w1920-h925-rw");
+  background-image: url("https://lh3.googleusercontent.com/DqcNbdFedmy6e6fTQC7F4gbur9iNB7WWMZnQOfn1A_2fOCPLYcw9FBcr8m36e_FcSXFM-qIwc1zRhGQ=w1920-h974-rw");
   background-size: cover;
   background-attachment:fixed;
   height: 500px;
@@ -19,7 +19,7 @@ h1 {
   font-weight:bold;
   text-shadow: 0px -2px 2px rgba(0, 0, 0, .4);
   position:absolute;
-  bottom:-30px;
+  bottom:-462px;
   right: 40px;
   padding: 0px;
 }
@@ -72,7 +72,7 @@ body {
 .img-box1 {
   /*border: solid 1px gray;*/
   border-radius: 50%;
-  display: block;
+  /*display: block;*/
   float:left;
   left:400px;
   width: 500px;
@@ -81,13 +81,13 @@ body {
   margin: auto;
   margin-right: 5px;
   margin-top:150px;
-  position:absolute;
+  position: sticky;
   background-image: url("http://www.fillmurray.com/300/300");
   background-size: cover;
 
 }
 
-/**/
+
 .quote1 {
   display:block;
   text-align: center;
@@ -98,12 +98,12 @@ body {
 /* quoted block itself*/
 blockquote {
     font-family:Catamaran, sans-serif;
-    position: relative;
+    position: absolute;
     width:500px;
-    margin: 0.5em;
-    padding: 0.5em 2em 0.5em 3em;
-    left:1000px;
-    bottom:-120px;
+    margin: 20px;
+    padding: 20px;
+    left:100px;
+    top:160px;
     font-size:150% !important;
     border-left:none !important;
 
@@ -133,17 +133,17 @@ blockquote:after {
 }
 
 
-#cite{
-  position:absolute;
-  right:400px;
-  top:520px;
+cite{
+  position:relative;
+  left:140px;
+  top:580px;
 }
 
 .p1-container {
-  display: inline-block;
+  display: block;
   /*border:solid 1px yellow;*/
  position:absolute;
-  bottom:-600px;
+  bottom:-250px;
   left:50%;
   margin-left:-325px;
   color:gray;
@@ -162,24 +162,26 @@ h2 {
 .headings {
   color: gray;
 }
+.head2{
+  margin-top:100px;
+}
 
 
 /* hours and map*/
 
 .info-pic {
   /*border: solid 1px coral;*/
-  display :inline-flex;
+  display:inline-grid;
   position:relative;
+  width:1200px;
+  height: inherit;
   left:50%;
-  height: 800px;
-  width: 1200px;
-  margin-left: -600px;
-  overflow:hidden;
-  padding: 20px;
+  margin-left:-600px;
 }
 
 .hours {
   display:inline-block;
+  position:absolute;
   height: 700px;
   width: 50%;
   /*border: 1px solid green;*/
@@ -198,23 +200,19 @@ h2 {
 
 .map {
   display:inline-block;
-  align-content: center;
+
   height: 750px;
   /*border: 20px solid pink;*/
-  width: 50%;
+
   /*padding: 20px 20px;*/
-  overflow:hidden;
   margin:auto;
 }
 
 #map-pic {
   display:inline-block;
-  position:absolute;
   align-self: center;
-
-  /*border: 1px solid maroon;*/
+  /*border: 1px solid maroon !important;*/
   /*height: 500px;*/
-  width:500px;
   margin: auto;
 }
 
@@ -229,38 +227,27 @@ footer {
 }
 
 .nav2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 25px;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  display:inline-flex;
+  height:50px;
+  /*border:solid 1px green;*/
+
 }
 .login{
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  position:relative;
- /* border:1px solid green;*/
-  -webkit-box-align:end;
-      -ms-flex-align:end;
-          align-items:flex-end;
-  -webkit-box-pack:end;
-      -ms-flex-pack:end;
-          justify-content:flex-end;
-  height:210px
+  border: 1px solid yellow:
+  display:inline-block;
+  postion:absolute;
+  right:220px;
+  bottom:10px;
+  float:right;
+  height:50px;
+  padding: 20px;
 }
 .social-buttons{
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
+  display:inline-grid;
   height:50px;
-  width:100%;
+  width:50%;
   /*border: solid 1px pink;*/
- -webkit-box-orient:horizontal;
- -webkit-box-direction:normal;
-     -ms-flex-direction:row;
-         flex-direction:row;
+
 }
 #fb{
  height:50px;
