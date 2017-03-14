@@ -34,10 +34,17 @@ a:hover{
 }
 .foot-wrapper{
 font-size: 1.5em;
-position:absolute;
-bottom:20px;
-/*text-align: center;*/
+display:inline;
+position:fixed;
+bottom:0px;
+left:20px;
 color:rgb(213,219,224);
+}
+.fb{
+  height:50px;
+  position:fixed;
+  bottom:15px;
+  border-radius: 4px;
 }
 @media (max-width: 1200px){
     h1{
