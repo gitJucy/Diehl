@@ -6,7 +6,7 @@ body{
   height:100vh;
   background-image: url('assets/img/veg_back.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat:no-repeat;
   background-color:rgb(65,65,65);
   color:rgb(218,218,218);
@@ -27,5 +27,22 @@ button{
 
 }
 h2{
-  font-family:'poiret one'
-}
+  font-family:'poiret one', sans-serif;
+    color:rgb(255,255,255);
+    text-decoration: none;
+  }
+  .top-nav{
+    font-size:.75em;
+    font-family: 'catamaran',sans-serif;
+    font-weight: bolder;
+    margin:20px !important;
+  }
+  a{
+    padding:40px;
+    text-decoration: none;
+    color:rgb(218,218,218);
+  }
+  a:hover{
+    color:rgb(255,255,255);
+    text-decoration: none;
+  }

@@ -3,6 +3,7 @@ body{
   background-position: top;
   text-align: center;
   font-family: "catamaran", sans-serif;
+  height:100vh;
 }
 h1{
   color:rgb(200,221,199);
@@ -22,4 +23,19 @@ ul{
 li{
   font-style: italic;
   font-size: 2em;
+}
+.top-nav{
+  font-size:2em;
+  font-family: 'catamaran',sans-serif;
+  font-weight: bolder;
+  margin:20px !important;
+}
+a{
+  padding:40px;
+  text-decoration: none;
+  color:rgb(218,218,218);
+}
+a:hover{
+  color:rgb(255,255,255);
+  text-decoration: none;
 }
