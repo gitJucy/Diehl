@@ -3,7 +3,9 @@ body{
   background-position: right;
   text-align: center;
   font-family: "catamaran", sans-serif;
-  height:100vh;
+  max-height:100vh;
+  min-height: 100vh:
+  overflow:hidden;
 }
 h1{
   color:rgb(200,221,199);
@@ -34,15 +36,15 @@ li{
 p{
   font-style: italic;
   font-size: 2.5em;
-  color:rgb(185,185,185);
-  text-shadow: 0px 0px 15px rgb(42,41,38);
+  color:rgb(240,240,240);
+  text-shadow: 0px 0px 5px rgb(42,41,38);
 
 }
 .top-nav{
   font-size:2em;
   font-family: 'catamaran',sans-serif;
   font-weight: bolder;
-  margin:20px !important;
+  margin:35px !important;
 }
 a{
   padding:40px;

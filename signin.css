@@ -3,10 +3,12 @@ body{
   font-size:2.5em;
   font-family: 'catamaran';
   padding:20px;
-  height:100vh;
+  min-height:100vh;
+  max-height:100vh;
+  overflow:hidden;
   background-image: url('assets/img/veg_back.jpg');
-  background-size: cover;
-  background-position: bottom;
+  background-size: fill;
+  background-position: top;
   background-repeat:no-repeat;
   background-color:rgb(65,65,65);
   color:rgb(218,218,218);
@@ -30,10 +32,10 @@ h2{
     text-decoration: none;
   }
   .top-nav{
-    font-size:.75em;
+    font-size:.7em;
     font-family: 'catamaran',sans-serif;
     font-weight: bolder;
-    margin:20px !important;
+    margin:18px !important;
   }
   a{
     padding:40px;
