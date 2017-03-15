@@ -1,7 +1,7 @@
 
 .content-index{
   text-align: center;
-  font-family: catamaran;
+  font-family: 'catamaran';
   padding:20px;
   height:100vh;
   background-image: url('assets/img/veg_back.jpg');
@@ -53,7 +53,7 @@ h2{
 .top-nav{
   font-size:2em;
   font-family: 'catamaran',sans-serif;
-  font-weight: bolder;
+  /*font-weight: bolder;*/
   margin:20px !important;
 }
 .bttn{
@@ -68,6 +68,7 @@ h2{
 
 .btn-group{
   background-color: transparent;
+  font-family: 'catamaran', sans-serif;
   border:none;
   padding:40px;
   text-decoration: none;
