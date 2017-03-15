@@ -1,0 +1,170 @@
+
+.content-index{
+  text-align: center;
+  font-family: catamaran;
+  padding:20px;
+  height:100vh;
+  background-image: url('assets/img/veg_back.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-color:rgb(65,65,65);
+}
+.content-info{
+  background-image: url("assets/img/veg_back.jpg");
+  background-position: right;
+  background-size: fill;
+  text-align: center;
+  font-family: "catamaran", sans-serif;
+  height:100vh;
+  overflow:hidden;
+}
+.content-sign{
+  text-align: center;
+  font-family: 'catamaran';
+  padding:20px;
+  height:100vh;
+  overflow:hidden;
+  background-image: url('assets/img/veg_back.jpg');
+  background-size: fill;
+  background-position: top;
+  background-repeat:no-repeat;
+  background-color:rgb(65,65,65);
+  color:rgb(218,218,218);
+}
+
+
+h1{
+  font-size:10em;
+  font-family: 'Poiret One', sans-serif;
+  font-weight: bold;
+  margin:20px 0 0 0;
+  color:rgb(200,221,199);
+  text-shadow: 0px 0px 15px rgb(42,41,38);
+}
+h2{
+  color:rgb(200,221,199);
+  text-shadow: 0px 0px 15px rgb(42,41,38);
+  font-family:'Poiret One', sans-serif;
+  font-weight: bold;
+  font-size:6em;
+}
+
+.top-nav{
+  font-size:2em;
+  font-family: 'catamaran',sans-serif;
+  font-weight: bolder;
+  margin:20px !important;
+}
+.bttn{
+  height: 50px;
+  width:100px;
+  font-family: 'catamaran';
+  font-size:20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.btn-group{
+  background-color: transparent;
+  border:none;
+  padding:40px;
+  text-decoration: none;
+  color:rgb(218,218,218);
+  font-size:1em;
+}
+.btn-group:hover{
+  text-decoration: none;
+  color:rgb(255,255,255);
+}
+.inpt{
+  height:45px;
+  font-size:1em;
+  padding-left: 10px:
+}
+.form-signin{
+  margin:10px;
+}
+
+.foot-wrapper{
+  font-size: 1em;
+  display:inline;
+  position: absolute;
+  bottom:40px;
+  left:20px;
+  color:rgb(200,221,199);
+}
+.copy{
+  font-size:.6em;
+}
+.fb{
+  height:40px;
+  position:absolute;
+  bottom:16px;
+  left:160px;
+  border-radius: 6px;
+}
+/*info-page*/
+.info-wrapper{
+background-color:rgba(200,200,200,.8);
+margin:50px auto;
+text-align: center;
+}
+.iframe-container{
+  position:relative;
+  overflow:hidden;
+  height:auto;
+  width:auto;
+}
+.iframe-container.iframe{
+  position:absolute;
+  min-width: 300px;
+  min-height: auto;
+  padding:20px:
+  margin:0 20px;
+}
+
+
+ul{
+  color:rgb(250,250,250);
+}
+li{
+  font-style: italic, bold;
+  font-size: 2.5em;
+}
+.info-hours{
+  font-style: italic;
+  font-size: 2.5em;
+  color:rgb(250,250,250);
+  text-shadow: 0px 0px 5px rgb(42,41,38);
+
+}
+
+@media (max-width: 1200px){
+    h1{
+      font-size: 7em;
+    }
+
+}
+@media (max-width: 768px){
+  h1{
+    font-size:4em;
+  }
+  .top-nav{
+    font-size: 1.5em;
+    align-self: center;S
+  }
+  .list-inline{
+    width:300px;
+    align-content: space-around;
+  }
+}
+@media(max-width: 370px){
+  body{
+    background-size: 100%;
+  }
+  h1{
+    font-size: 3em;
+  }
+}
