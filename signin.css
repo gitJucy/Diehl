@@ -17,25 +17,28 @@ body{
 input{
   height:2.5em;
   font-size:.5em;
+  padding-left: 10px:
 }
 button{
   height: 50px;
   width:100px;
   font-family: 'catamaran';
   font-size:20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-left: 10px;
+  cursor: pointer;
 
 }
 h2{
   font-family:'poiret one', sans-serif;
-    color:rgb(255,255,255);
+  color:rgb(200,221,199);
     text-decoration: none;
   }
   .top-nav{
     font-size:.7em;
     font-family: 'catamaran',sans-serif;
     font-weight: bolder;
-    margin:18px !important;
+    /*margin:18px !important;*/
   }
   a{
     padding:40px;
@@ -45,4 +48,13 @@ h2{
   a:hover{
     color:rgb(255,255,255);
     text-decoration: none;
+  }
+  .form-control{
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  @media(max-width:370px){
+    .top-nav{
+      align-content: center;
+    }
   }

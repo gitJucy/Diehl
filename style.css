@@ -1,3 +1,4 @@
+
 body{
   text-align: center;
   font-family: catamaran;
@@ -35,16 +36,17 @@ a:hover{
 .foot-wrapper{
 font-size: 1.5em;
 display:inline;
-position:fixed;
-bottom:0px;
+position: absolute;
+bottom:60px;
 left:20px;
-color:rgb(213,219,224);
+color:rgb(200,221,199);
 }
 .fb{
   height:50px;
-  position:fixed;
+  position:absolute;
   bottom:15px;
-  border-radius: 4px;
+  left:180px;
+  border-radius: 6px;
 }
 @media (max-width: 1200px){
     h1{
@@ -58,13 +60,21 @@ color:rgb(213,219,224);
   }
   .top-nav{
     font-size: 1.5em;
+    align-self: center;S
   }
   .list-inline{
     width:300px;
     align-content: space-around;
   }
 }
-
+@media(max-width: 370px){
+  body{
+    background-size: 100%;
+  }
+  h1{
+    font-size: 3em;
+  }
+}
 
 /*pop-up styling*/
 /* The Modal (background) */
