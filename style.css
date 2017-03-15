@@ -44,8 +44,8 @@ color:rgb(200,221,199);
 .fb{
   height:50px;
   position:absolute;
-  bottom:15px;
-  left:180px;
+  bottom:10px;
+  left:150px;
   border-radius: 6px;
 }
 @media (max-width: 1200px){
