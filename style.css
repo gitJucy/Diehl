@@ -1,36 +1,26 @@
-.content-index{
+/*Body Styles*/
+body{
   text-align: center;
   font-family: 'catamaran';
-  padding:20px;
-  height:100vh;
-  background-image: url('assets/img/veg_back.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat:no-repeat;
-  background-color:rgb(65,65,65);
-}
-.content-info{
   background-image: url("assets/img/veg_back.jpg");
+  background-color:rgb(65,65,65);
+  height:100vh;
+  overflow: hidden;
+  background-repeat:no-repeat;
+}
+#info{
   background-position: right;
   background-size: fill;
-  text-align: center;
-  font-family: "catamaran", sans-serif;
-  height:100vh;
-  overflow:hidden;
 }
-.content-sign{
-  text-align: center;
-  font-family: "catamaran" !important, sans-serif;
-  padding:20px;
-  height:100vh;
-  overflow:hidden;
-  background-image: url('assets/img/veg_back.jpg');
+#index{
+  background-size: cover;
+  background-position: center;
+}
+#sign{
   background-size: fill;
   background-position: top;
-  background-repeat:no-repeat;
-  background-color:rgb(65,65,65);
-  color:rgb(218,218,218);
 }
+
 h1{
   font-size:10em;
   font-family: 'Poiret One', sans-serif;
@@ -49,7 +39,7 @@ h2{
 h3{
   color:rgb(218,218,218);
   text-shadow: 0px 0px 15px rgb(42,41,38);
-  font-family:'CATAMARAN', sans-serif;
+  font-family:'catamaran', sans-serif;
   font-size:4em;
 }
 
@@ -59,7 +49,7 @@ h3{
   /*font-weight: bolder;*/
   margin:20px !important;
 }
-.bttn{
+#signin_button{
   height: 50px;
   width:100px;
   font-family: 'catamaran';
@@ -131,6 +121,7 @@ li{
   text-shadow: 0px 0px 5px rgb(42,41,38);
 
 }
+
 /*responsive CSS custom styling*/
 @media (max-width: 1200px){
     h1{
