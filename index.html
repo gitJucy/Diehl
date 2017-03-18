@@ -26,24 +26,22 @@
     <![endif]-->
   </head>
   <body id="index">
-    <div class="container">
-      <!-- wrapping div for the nav bar -->
-      <div class="inline  top-nav ">
-        <!-- links to internal pages -->
-        <a href ="index.html"id="home-link"><button class="btn btn-group">Home</button></a>
-        <a href="info.html" id="info-link"><button class="btn btn-group">Hours/Info</button></a>
-        <!-- Link to seperate simple login.html -->
-        <a href="signin.html"><button class="btn btn-group">Restaurants</button></a>
-      </div>
-      <h1>DIEHL'S PRODUCE</h1>
-    </div>
+    <h1>DIEHL'S PRODUCE</h1>
     <!--footer elements.   can add social media buttons if needed.  -->
-    <div class="foot-wrapper">
-      <ul class="inline-block list-unstyled">
-        <li><p class="copy">&copy 2017 Diehl's</p></li>
-        <li><a target="_blank"href="https://www.facebook.com/DiehlsProduceAnnapolis/"><img class="fb"src="assets/img/fb-icon.jpg"/></a></li>
-      </ul>
-    </div>
+    <!-- wrapping div for the nav bar -->
+      <nav class="navbar navbar-fixed-bottom">
+        <div class="container">
+            <ul class="nav navbar-right text-right">
+              <li><a href="https://www.facebook.com/DiehlsProduceAnnapolis/"><img class="fb"src="assets/img/fb-icon.jpg"/>Like Us</a></li>
+              <li><a class="hidden-xs" href="info.html">About Us</a></li>
+              <li><a href="signin.html">Restaurant Login</a></li>
+            </ul>
+            <ul class="nav navbar-left text-left copyright">
+              <li><p class="copy">&copy 2017 Diehl's</p></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
   <!--Bootstrap javascript imports-->
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
