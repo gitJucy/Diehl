@@ -23,13 +23,22 @@ nav{
 
 a{
   color:rgb(218,218,218);
+  
 }
 
 .copyright{
   position: absolute;
   bottom: 0;
   padding-bottom: 40px;
+  pointer-events: none;
 }
+
+#like-small{
+  font-size: 2em;
+}
+
+
+
 /*#info{
   background-position: right;
   background-size: fill;
@@ -108,7 +117,11 @@ h3{
 .fb{
   height:40px;
   margin-right: 10px;
+  /*margin-bottom: 20px;*/
   border-radius: 6px;
+}
+.fb-small{
+  height: 30px;
 }
 /*info-page*/
 .info-wrapper{

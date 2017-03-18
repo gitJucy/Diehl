@@ -32,12 +32,14 @@
       <nav class="navbar navbar-fixed-bottom">
         <div class="container">
             <ul class="nav navbar-right text-right">
-              <li><a href="https://www.facebook.com/DiehlsProduceAnnapolis/"><img class="fb"src="assets/img/fb-icon.jpg"/>Like Us</a></li>
+              <li class="hidden-xs"><a target="_blank" href="https://www.facebook.com/DiehlsProduceAnnapolis/"><img class="fb" src="assets/img/fb-icon.jpg"/>Like Us</a></li>
+
               <li><a class="hidden-xs" href="info.html">About Us</a></li>
-              <li><a href="signin.html">Restaurant Login</a></li>
+              <li><a id="login" href="signin.html">Restaurant Login</a></li>
             </ul>
             <ul class="nav navbar-left text-left copyright">
-              <li><p class="copy">&copy 2017 Diehl's</p></li>
+              <li class="visible-xs" id="like-small"><a target="_blank" href="https://www.facebook.com/DiehlsProduceAnnapolis/"><img class="fb fb-small" src="assets/img/fb-icon.jpg"/>Like Us</a></li>
+              <li><a class="copy disabled">&copy 2017 Diehl's</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
