@@ -26,28 +26,40 @@
     <![endif]-->
   </head>
   <body id="index">
-    <h1>DIEHL'S PRODUCE</h1>
-    <!--footer elements.   can add social media buttons if needed.  -->
-    <!-- wrapping div for the nav bar -->
-      <nav class="navbar navbar-fixed-bottom">
-        <div class="container">
-            <ul class="nav navbar-right text-right">
+    <nav class="navbar navbar-fixed-top hidden-xs">
+      <div class="container">
+        <ul class="nav nav-justified">
+          <li class="active"><a href ="#">Home</a></li>
+          <li><a href="info.html">Hours/Info</a></li>
+          <!-- Link to seperate simple login.html -->
+          <li><a href="signin.html">Restaurants</a></li>
+        </ul>
 
-              <li><a class="hidden-xs" href="info.html">About Us</a></li>
-              <li><a id="login" href="signin.html">Restaurant Login</a></li>
-               <li class="hidden-xs"><a target="_blank" href="https://www.facebook.com/DiehlsProduceAnnapolis/"><img class="fb" src="assets/img/fb-icon.jpg"/>Like Us</a></li>
-            </ul>
-            <ul class="nav navbar-left text-left copyright">
-              <li class="visible-xs" id="like-small"><a target="_blank" href="https://www.facebook.com/DiehlsProduceAnnapolis/"><img class="fb fb-small" src="assets/img/fb-icon.jpg"/>Like Us</a></li>
-              <li><a class="copy disabled">&copy 2017 Diehl's</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </nav>
-  <!--Bootstrap javascript imports-->
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+      </div>
+    </nav>
+
+    <div class="container title">
+      <h1>DIEHL'S PRODUCE</h1>
+    </div>
+    <!--footer elements.   can add social media buttons if needed.  -->
+    <!-- wrapping div for the bottom nav bar -->
+    <nav class="navbar navbar-fixed-bottom">
+      <div class="container">
+          <ul class="nav navbar-right text-right lower-right-nav">
+            <li class="visible-xs"><a id="login" href="signin.html">Restaurant Login</a></li>
+            <li class="hidden-xs"><a target="_blank" href="https://www.facebook.com/DiehlsProduceAnnapolis/"><img class="fb" src="assets/img/fb-icon.jpg"/>Like Us</a></li>
+          </ul>
+          <ul class="nav navbar-left text-left lower-left-nav">
+            <li class="visible-xs"><a class="like-small" target="_blank" href="https://www.facebook.com/DiehlsProduceAnnapolis/"><img class="fb fb-small" src="assets/img/fb-icon.jpg"/></a></li>
+            <li><a class="copyright">&copy 2017 Diehl's</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!--Bootstrap javascript imports-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
