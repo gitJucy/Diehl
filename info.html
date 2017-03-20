@@ -27,14 +27,18 @@
   </head>
   <body id="info">
     <!-- wrapping div for the nav bar -->
-    <div class="list-inline list-unstyled top-nav text-center">
-      <!-- links to internal pages -->
-      <a href ="index.html"id="home-link"><button class="btn btn-group text-center">Home</button></a>
-      <a href="info.html" id="info-link"><button class="btn btn-group text-center">Hours/Info</button></a>
-      <!-- Link to seperate simple login.html -->
-      <a href="signin.html"><button class="btn btn-group">Restaurants</button></a>
+    <nav class="container">
+      <ul class="nav nav-pills nav-justified hidden-xs">
+        <li><a href ="index.html">Home</a></li>
+        <li class="active"><a href="#">About Us</a></li>
+        <!-- Link to seperate simple login.html -->
+        <li><a href="signin.html">Restaurant Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <h2>HOURS AND INFO</h2>
     </div>
-    <h2>HOURS</h2>
     <div class="container info-wrapper">
       <h3>Eastport</h3>
       <div class="iframe-container">

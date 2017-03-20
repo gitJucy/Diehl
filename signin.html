@@ -26,14 +26,17 @@
     <![endif]-->
   </head>
   <body id="sign">
+    <body id="info">
     <!-- wrapping div for the nav bar -->
-    <div class="list-inline list-unstyled top-nav ">
-      <!-- links to internal pages -->
-      <a href ="index.html"id="home-link"><button class="btn btn-group">Home</button></a>
-      <a href="info.html" id="info-link"><button class="btn btn-group">Hours/Info</button></a>
-      <!-- Link to seperate simple login.html -->
-      <a href="signin.html"><button class="btn btn-group">Restaurants</button></a>
-    </div>
+    <nav class="container">
+      <ul class="nav nav-pills nav-justified hidden-xs">
+        <li><a href ="index.html">Home</a></li>
+        <li><a href="info.html">About Us</a></li>
+        <!-- Link to seperate simple login.html -->
+        <li class="active"><a href="#">Restaurant Login</a></li>
+      </ul>
+    </nav>
+
     <div class="container">
       <form class="form-signin">
         <h2 class="form-signin-heading">PLEASE SIGN IN</h2>
