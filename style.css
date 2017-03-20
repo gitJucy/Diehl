@@ -1,4 +1,4 @@
-/*Body Styles*/
+/*Tag properties*/
 body{
   text-align: center;
   font-family: 'catamaran';
@@ -7,7 +7,95 @@ body{
   height:100vh;
   overflow: hidden;
   background-repeat:no-repeat;
+  /*background-position: center;
+  background-size: cover;*/
 }
+nav{
+  z-index: 20;
+  background-color: transparent;
+  font-family: 'catamaran';
+  font-size:1em;
+}
+li{
+  font-size: 2.5em;
+}
+a{
+  color:rgb(218,218,218); 
+}
+label{
+  color:rgb(218,218,218); 
+  font-size: 2.0em;
+}
+h1{
+  font-size:10em;
+  font-family: 'Poiret One';
+  font-weight: bold;
+  color:rgb(200,221,199);
+  text-shadow: 0px 0px 15px rgb(42,41,38);
+}
+h2{
+  color:rgb(200,221,199);
+  text-shadow: 0px 0px 15px rgb(42,41,38);
+  font-family:'Poiret One';
+  font-weight: bold;
+  font-size:6em;
+}
+h3{
+  color:rgb(218,218,218);
+  text-shadow: 0px 0px 15px rgb(42,41,38);
+  font-family:'catamaran';
+  font-size:4em;
+}
+
+.lower-nav{
+  padding-bottom: 40px;
+}
+.lower-right-nav{
+  float: right!important;
+}
+.lower-left-nav{
+  float: left!important;
+}
+.like-small{
+  font-size: .6em;
+}
+.login-small{
+  font-size: .8em;
+}
+.copyright{
+  font-size:.6em;
+  pointer-events: none;
+}
+.fb{
+  height:40px;
+  margin-right: 10px;
+  border-radius: 6px;
+}
+.fb-small{
+  height: 30px;
+}
+
+/*info-page*/
+.info-wrapper{
+  background-color:rgba(150,150,150,0.4);
+  margin:50px auto;
+  text-align: center;
+  min-height:200px;
+  }
+
+.info-address a{
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.info-hours{
+  font-style: italic;
+  font-size: 2.5em;
+  color:rgb(250,250,250);
+  text-shadow: 0px 0px 5px rgb(42,41,38);
+
+}
+
 #info{
   background-position: right;
   background-size: fill;
@@ -21,148 +109,44 @@ body{
   background-position: top;
 }
 
-h1{
-  font-size:10em;
-  font-family: 'Poiret One', sans-serif;
-  font-weight: bold;
-  margin:20px 0 0 0;
-  color:rgb(200,221,199);
-  text-shadow: 0px 0px 15px rgb(42,41,38);
-}
-h2{
-  color:rgb(200,221,199);
-  text-shadow: 0px 0px 15px rgb(42,41,38);
-  font-family:'Poiret One', sans-serif;
-  font-weight: bold;
-  font-size:6em;
-}
-h3{
-  color:rgb(218,218,218);
-  text-shadow: 0px 0px 15px rgb(42,41,38);
-  font-family:'catamaran', sans-serif;
-  font-size:4em;
-}
-
-.top-nav{
-  font-size:2em;
-  font-family: 'catamaran',sans-serif;
-  /*font-weight: bolder;*/
-  margin:20px !important;
-}
-#signin_button{
-  height: 50px;
-  width:100px;
-  font-family: 'catamaran';
-  font-size:20px;
-  background-color: rgba(255, 255, 255, 0.4);
-  margin: 10px 0 0 10px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.btn-group{
-  background-color: transparent;
-  font-family: 'catamaran', sans-serif;
-  border:none;
-  padding:10px 40px;
-  text-decoration: none;
-  color:rgb(218,218,218);
-  font-size:1em;
-}
-.btn-group:hover{
-  text-decoration: none;
-  color:rgb(255,255,255);
-}
-.form-control{
-  height:45px;
-  font-size: 1.5em;
-  margin:10px;
-  padding-left: 10px;
-  border-radius: 5px;
-}
-
-.foot-wrapper{
-  font-size: 1em;
-  display:inline;
-  position: absolute;
-  bottom:40px;
-  left:20px;
-  color:rgb(200,221,199);
-}
-.copy{
-  font-size:.6em;
-}
-.fb{
-  height:40px;
-  position:absolute;
-  bottom:16px;
-  left:160px;
-  border-radius: 6px;
-}
-/*info-page*/
-.info-wrapper{
-background-color:rgba(150,150,150,0.4);
-margin:50px auto;
-text-align: center;
-width:80%;
-min-height:200px;
-}
-ul{
-  color:rgb(250,250,250);
-}
-li{
-  font-style: italic, bold;
-  font-size: 2.5em;
-}
-.info-hours{
-  font-style: italic;
-  font-size: 2.5em;
-  color:rgb(250,250,250);
-  text-shadow: 0px 0px 5px rgb(42,41,38);
-
+.login-form{
+  max-width: 580px;
+  padding-top: 70px;
 }
 
 /*responsive CSS custom styling*/
-@media (max-width: 1200px){
+@media (max-width: 991px){
     h1{
       font-size: 7em;
     }
 }
-@media (max-width: 768px){
-  h1{
-    font-size:4em;
-  }
+@media (max-width: 767px){
   h2{
     font-size:3em;
-    text-align: center;
   }
   h3{
     font-size: 2em;
   }
-  .top-nav{
-    font-size: 1.5em;
+  .copyright{
+    font-size: .5em;
   }
-  .list-inline{
-    text-align: center;
+  .login-small{
+    font-size: .7em;
   }
-  .btn-group{
-    padding:0 10px;
-  }
-}
-@media (max-width: 350px){
-  .btn-group{
-    padding:10px 40px;
+  .lower-nav{
+    padding-bottom: 0;
   }
 }
-@media (max-width: 680px){
-    .bttn{
-      margin: 10px 80px;
-      }
-    }
-@media(max-width: 440px){
-  .btn-group{
-    padding:10px 80px;
+@media (max-width: 710px){
+  h1{
+    font-size:4em;
   }
-
-
+}
+@media (max-width: 365px){
+  .login-small{
+    font-size: .5em;
+  }
+  .info-hours{
+    font-size: 2em;
+  }
 }
