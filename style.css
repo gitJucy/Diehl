@@ -83,7 +83,7 @@ h3{
   min-height:200px;
   }
 
-.info-address{
+.info-address a{
   font-size: 1.5em;
 }
 
@@ -144,5 +144,8 @@ h3{
 @media (max-width: 365px){
   .login-small{
     font-size: .5em;
+  }
+  .info-hours{
+    font-size: 2em;
   }
 }
