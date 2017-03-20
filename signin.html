@@ -37,15 +37,36 @@
     </nav>
 
     <div class="container">
-      <form class="form-signin">
-        <h2 class="form-signin-heading">PLEASE SIGN IN</h2>
-        <label for="inputEmail" class="sr-only"></label>
-        <input type="email" id="inputEmail" class="form-control inpt" placeholder="Email@domain.com" required autofocus>
-        <label for="inputPassword" class="sr-only"></label>
-        <input type="password" id="inputPassword" class="form-control inpt" placeholder="Password" required>
-        <button class="btn-lg btn-primary pull-left" id ="signin_button" type="submit">Sign In</button>
+      <h2>RESTAURANT LOGIN</h2>
+    </div>
+    <div class="container login-form"
+      <form>
+        <div class="form-group has-success has-feedback">
+          <label for="res-id">Sign in using your numeric Restaurant ID:</label>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-leaf"></i></span>
+            <input type="number" name="restaurant-id" placeholder="Restaurant ID" class="form-control" id="res-id">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-default btn-block">Submit</button>
       </form>
     </div> <!-- /container -->
+
+    <!--footer elements.   can add social media buttons if needed.  -->
+    <!-- wrapping div for the bottom nav bar -->
+    <nav class="navbar navbar-fixed-bottom lower-nav">
+      <div class="container">
+          <ul class="nav nav-pills text-right lower-right-nav">
+            <li class="active visible-xs"><a class="login-small" href="index.html">Diehl's Produce</a></li>
+            <li class="hidden-xs"><a target="_blank" href="https://www.facebook.com/DiehlsProduceAnnapolis/"><img class="fb" src="assets/img/fb-icon.jpg"/>Like Us</a></li>
+          </ul>
+          <ul class="nav text-left lower-left-nav">
+            <li class="visible-xs"><a class="like-small" target="_blank" href="https://www.facebook.com/DiehlsProduceAnnapolis/"><img class="fb fb-small" src="assets/img/fb-icon.jpg"/></a></li>
+            <li><a class="copyright">&copy 2017 Diehl's</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
     <!--Bootstrap javascript imports-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
