@@ -24,12 +24,13 @@ html, body{
 #login{
   padding-top: 70px;
 }
-#pagewrapper, section { 
+#pagewrapper, section {
   background-image: url("assets/img/veg_back.jpg");
   background-repeat:no-repeat;
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
-	height:100% !important; 
+	height:100% !important;
 	width:100% !important;
 }
 nav{
@@ -42,10 +43,34 @@ li{
   font-size: 2.5em;
 }
 a{
-  color:rgb(218,218,218); 
+  color:rgb(218,218,218);
 }
+/*styling for top nav items*/
+.navbar-fixed-top li{
+  border-left: 4px solid rgba(250,250,250,0.7) ;
+}
+.nav-pills > li > a{
+  color:rgb(200,221,199);
+  background-color: transparent;
+}
+.nav-pills > li > a:hover{
+  color:rgb(250,250,250);
+  background-color: transparent;
+}
+.nav-pills>li.active > a,
+.nav-pills>li.active> a:hover{
+  background-color: transparent;
+  color:rgb(250,250,250);
+}
+/*bottom FB icon/ restaurant login*/
+.nav-pills.lower-right-nav,
+.nav-pills.lower-right-nav>a:hover{
+  font-size:0.7em;
+  color:rgb(200,221,199);
+}
+
 label{
-  color:rgb(218,218,218); 
+  color:rgb(218,218,218);
   font-size: 2.0em;
 }
 h1{
@@ -162,10 +187,10 @@ h3{
   .lower-nav{
     padding-bottom: 0;
   }
-  #home{ 
+  #home{
     padding-top: 0;
   }
-  #info{ 
+  #info{
     padding-top: 0;
   }
 }
