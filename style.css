@@ -62,12 +62,13 @@ a{
   background-color: transparent;
   color:rgb(250,250,250);
 }
-/*bottom FB icon/ restaurant login*/
+/*bottom FB icon/ restaurant login styling*/
 .nav-pills.lower-right-nav,
 .nav-pills.lower-right-nav>a:hover{
   font-size:0.7em;
   color:rgb(200,221,199);
 }
+/*--- end nav-based styling section*/
 
 label{
   color:rgb(218,218,218);
