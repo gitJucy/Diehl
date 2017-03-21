@@ -26,37 +26,46 @@
     <![endif]-->
   </head>
 <body>
-  <form class="form-horizontal">
-<fieldset>
+  <form class="inline-form">
+    <h2>Build Your Order</h2>
 
-<!-- Form Name -->
-<h2>Order</h2>
-
-<!-- Select -->
-<div class="form-group form-horizontal">
-  <label class="col-md-2 control-label" for="selectproduct">Select Your Produce</label>
-  <div class="col-md-4">
-    <select id="selectproduct" name="selectproduct" class="form-control">
-      <option value="1">Tomato (case)</option>
-      <option value="2">Zucchini (case)</option>
-      <option value="3">Squash (individual)</option>
-      <option value="4">Lettuce (case)</option>
-      <option value="5">Spinach (individual)</option>
-      <option value="6">Onion (case)</option>
-    </select>
-  </div>
-  <label class="col-md-2 control-label" for="selectquant">Quantity</label>
-  <div class="col-md-1">
-    <select id="selectquant" name="selectquant" class="form-control">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-    </select>
-  </div>
-</div>
-</fieldset>
+    <label class="mr-sm-2" for="inlineFormCustomSelect">Select Your Produce</label>
+      <select class="custom-select  " id="inlineFormProduct">
+        <option selected>Select...</option>
+        <option value="1">Tomato (case)</option>
+        <option value="2">Squash (case)</option>
+        <option value="3">Onion(case)</option>
+      </select>
+    </label>
+    <label class="mr-sm-2" for="inlineFormCustomSelect">Quantity</label>
+      <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormQuantity">
+        <option selected>Select...</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </label>
+    <button type="submit" class="btn btn-primary" id="add-item">Add Item</button>
 </form>
+<div class="container">
+  <list-group>
+    <ul id ="currrent-order" class="list-unstyled">
+      <li class="list-group-item">item1 : qty-1  <button type="button" class="btn btn-warning"id="remove-item">Remove Item</button></li>
+      <li class="list-group-item">item2 : qty-1  <button type="button" class="btn btn-warning"id="remove-item">Remove Item</button></li>
+      <li class="list-group-item">item3 : qty-1  <button type="button" class="btn btn-warning"id="remove-item">Remove Item</button></li>
+      <li class="list-group-item">item4 : qty-1  <button type="button" class="btn btn-warning"id="remove-item">Remove Item</button></li>
+    </ul>
+  </list>
+
+</div>
+<script>
+document.getElementById("add-item").addEventListener("click", function(){
+  var newLi = document.createElement("li");
+  var order = document.getElementById("current-order").getElemetsByTagName("ul")[0];
+  order.appendChild(newLi);
+  newLi.innerHTML= ""
+
+});
+
+</script>
 </body>
