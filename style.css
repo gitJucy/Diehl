@@ -95,7 +95,10 @@ h3{
   font-family:'catamaran';
   font-size:4em;
 }
-
+p{
+  font-size: 2em;
+  color:rgb(218,218,218);
+}
 .lower-nav{
   padding-bottom: 40px;
 }

@@ -28,7 +28,7 @@
 <body>
   <form class="inline-form">
     <h2>Build Your Order</h2>
-
+<!--  selector that chooses produce item-->
     <label class="mr-sm-2" for="inlineFormCustomSelect">Select Your Produce</label>
       <select class="custom-select  " id="inlineFormProduct">
         <option selected>Select...</option>
@@ -37,6 +37,7 @@
         <option value="3">Onion(case)</option>
       </select>
     </label>
+    <!--  quantity selector -->
     <label class="mr-sm-2" for="inlineFormCustomSelect">Quantity</label>
       <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormQuantity">
         <option selected>Select...</option>
@@ -45,26 +46,46 @@
         <option value="3">3</option>
       </select>
     </label>
-    <button type="submit" class="btn btn-primary" id="add-item">Add Item</button>
+    <!--  green btton that adds item to UL-->
+    <button type="submit" class="btn btn-success" id="add-item">Add Item</button>
 </form>
+<!-- UL that is generated based on user input from above -->
 <div class="container">
   <list-group>
     <ul id ="currrent-order" class="list-unstyled">
-      <li class="list-group-item">item1 : qty-1  <button type="button" class="btn btn-warning"id="remove-item">Remove Item</button></li>
-      <li class="list-group-item">item2 : qty-1  <button type="button" class="btn btn-warning"id="remove-item">Remove Item</button></li>
-      <li class="list-group-item">item3 : qty-1  <button type="button" class="btn btn-warning"id="remove-item">Remove Item</button></li>
-      <li class="list-group-item">item4 : qty-1  <button type="button" class="btn btn-warning"id="remove-item">Remove Item</button></li>
+      <li class="list-group-item">item1 : qty-1  <button type="button" class="btn btn-sm btn-warning"id="remove-item">Remove Item</button></li>
+      <li class="list-group-item">item2 : qty-1  <button type="button" class="btn btn-sm btn-warning"id="remove-item">Remove Item</button></li>
+      <li class="list-group-item">item3 : qty-1  <button type="button" class="btn btn-sm btn-warning"id="remove-item">Remove Item</button></li>
+      <li class="list-group-item">item4 : qty-1  <button type="button" class="btn btn-sm btn-warning"id="remove-item">Remove Item</button></li>
     </ul>
   </list>
-
 </div>
+<!--  bottom submit button to nav to the review page / order confirmation pop-up....whatever-->
+<div class="container">
+  <button type="submit"class="btn btn-lg btn-primary" id="submit-form">Submit My Order</button>
+  <p>  You will have a chance to review your order before it is final. </p>
+</div>
+<!-- bottom nav -->
+<nav class="navbar navbar-fixed-bottom lower-nav">
+  <div class="container">
+      <ul class="nav nav-pills text-right lower-right-nav">
+        <li class="active visible-xs"><a class="login-small" href="signin.html">Restaurant Login</a></li>
+        <li class="hidden-xs"><a target="_blank" href="https://www.facebook.com/DiehlsProduceAnnapolis/"><img class="fb" src="assets/img/fb-icon.jpg"/>Like Us</a></li>
+      </ul>
+      <ul class="nav text-left lower-left-nav">
+        <li class="visible-xs"><a class="like-small" target="_blank" href="https://www.facebook.com/DiehlsProduceAnnapolis/"><img class="fb fb-small" src="assets/img/fb-icon.jpg"/></a></li>
+        <li><a class="copyright">&copy 2017 Diehl's</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+<!--  java script control of the list above -->
 <script>
 document.getElementById("add-item").addEventListener("click", function(){
   var newLi = document.createElement("li");
   var order = document.getElementById("current-order").getElemetsByTagName("ul")[0];
   order.appendChild(newLi);
   newLi.innerHTML= ""
-
 });
 
 </script>
