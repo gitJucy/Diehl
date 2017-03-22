@@ -51,8 +51,8 @@
 </form>
 <!-- UL that is generated based on user input from above -->
 <div class="container">
-  <list-group>
-    <ul id ="currrent-order" class="list-unstyled">
+  <list-group id ="currrent-order" >
+    <ul class="list-unstyled">
       <li class="list-group-item">item1 : qty-1  <button type="button" class="btn btn-sm btn-warning"id="remove-item">Remove Item</button></li>
       <li class="list-group-item">item2 : qty-1  <button type="button" class="btn btn-sm btn-warning"id="remove-item">Remove Item</button></li>
       <li class="list-group-item">item3 : qty-1  <button type="button" class="btn btn-sm btn-warning"id="remove-item">Remove Item</button></li>
@@ -83,13 +83,13 @@
 <script>
 document.getElementById("add-item").addEventListener("click", function(){
   var newLi = document.createElement("li");
-  var order = document.getElementById("current-order").getElemetsByTagName("ul")[0];
+  var order = document.getElementById("current-order").getElementsByTagName("ul");
   var item = document.getElementById("inlineFormProduct");
-  var listStringP = item.options[item.selectedIndex].text;
+  var listStringP = item.options[ item.selectedIndex ].text;
   var quant = document.getElementById("inlineFormQuantity");
-  var listStringQ = quant.options[quant.selectedIndex].text;
+  var listStringQ = quant.options[ quant.selectedIndex ].text;
   order.appendChild(newLi);
-  newLi.innerHTML= "listStringP+ "," + listStringQ";
+  newLi.innerHTML=listStringP+listStringQ;
 });
 
 
