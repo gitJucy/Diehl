@@ -84,9 +84,14 @@
 document.getElementById("add-item").addEventListener("click", function(){
   var newLi = document.createElement("li");
   var order = document.getElementById("current-order").getElemetsByTagName("ul")[0];
+  var item = document.getElementById("inlineFormProduct");
+  var listStringP = item.options[item.selectedIndex].text;
+  var quant = document.getElementById("inlineFormQuantity");
+  var listStringQ = quant.options[quant.selectedIndex].text;
   order.appendChild(newLi);
-  newLi.innerHTML= ""
+  newLi.innerHTML= "listStringP+ "," + listStringQ";
 });
+
 
 </script>
 </body>
