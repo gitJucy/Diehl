@@ -28,8 +28,9 @@
 <body>
   <form class="inline-form">
     <h2>Build Your Order</h2>
+  <div class="container selector-wrapper">
 <!--  selector that chooses produce item-->
-    <label class="mr-sm-2" for="inlineFormCustomSelect">Select Your Produce</label>
+    <label for="inlineFormCustomSelect">Produce</label>
       <select class="custom-select  " id="inlineFormProduct">
         <option selected>Select...</option>
         <option value="1">Tomato (case)</option>
@@ -38,7 +39,7 @@
       </select>
     </label>
     <!--  quantity selector -->
-    <label class="mr-sm-2" for="inlineFormCustomSelect">Quantity</label>
+    <label for="inlineFormCustomSelect">Quantity</label>
       <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormQuantity">
         <option selected>Select...</option>
         <option value="1">1</option>
@@ -49,11 +50,13 @@
     <!--  green btton that adds item to UL-->
     <button type="submit" class="btn btn-success" id="add-item">Add Item</button>
 </form>
+</div>
 <!-- UL that is generated based on user input from above -->
 <div class="container">
   <list-group id ="currrent-order" >
     <ul class="list-unstyled">
-      <li class="list-group-item">item1 : qty-1  <button type="button" class="btn btn-sm btn-warning"id="remove-item">Remove Item</button></li>
+      <!--  decide between glyph or button...-->
+      <!-- <li class="list-group-item">item1 : qty-1  <span class="glyphicon glyphicon-remove" id="remove-item"></span></li> -->
       <li class="list-group-item">item2 : qty-1  <button type="button" class="btn btn-sm btn-warning"id="remove-item">Remove Item</button></li>
       <li class="list-group-item">item3 : qty-1  <button type="button" class="btn btn-sm btn-warning"id="remove-item">Remove Item</button></li>
       <li class="list-group-item">item4 : qty-1  <button type="button" class="btn btn-sm btn-warning"id="remove-item">Remove Item</button></li>
@@ -69,7 +72,6 @@
 <nav class="navbar navbar-fixed-bottom lower-nav">
   <div class="container">
       <ul class="nav nav-pills text-right lower-right-nav">
-        <li class="active visible-xs"><a class="login-small" href="signin.html">Restaurant Login</a></li>
         <li class="hidden-xs"><a target="_blank" href="https://www.facebook.com/DiehlsProduceAnnapolis/"><img class="fb" src="assets/img/fb-icon.jpg"/>Like Us</a></li>
       </ul>
       <ul class="nav text-left lower-left-nav">
@@ -89,7 +91,7 @@ document.getElementById("add-item").addEventListener("click", function(){
   var quant = document.getElementById("inlineFormQuantity");
   var listStringQ = quant.options[ quant.selectedIndex ].text;
   order.appendChild(newLi);
-  newLi.innerHTML=listStringP+listStringQ;
+  newLi.innerHTML= "listStringP" + "listStringQ";
 });
 
 
