@@ -32,16 +32,13 @@
       <!--  selector that chooses produce item-->
       <label class="control-label" for="produce_select">Produce</label>
       <select required class="form-control" id="produce_select">
-        <option disabled selected value="">Select...</option>
-        <option value="1">Tomato (case)</option>
-        <option value="2">Squash (case)</option>
-        <option value="3">Onion (case)</option>
+        <!--Dynamically filled from produce.txt-->
       </select>
       <!--  quantity selector -->
       <label class="control-label" for="quantity_select">Quantity</label>
       <input required type="number" min="0" max="100" step="1" class="form-control" id="quantity_select">
       <!--  green btton that adds item to UL-->
-      <button type="submit" class="btn btn-success" id="add-item">Add Item</button>
+      <button type="submit" class="btn btn-success" id="add-item" onclick="add_to_order()">Add Item</button>
     </div>
   </form>
 <!-- UL that is generated based on user input from above -->
@@ -61,6 +58,10 @@
   <button type="submit"class="btn btn-lg btn-primary" id="submit-form">Submit My Order</button>
   <p>  You will have a chance to review your order before it is final. </p>
 </div>
+
+<div class="container" id="table">
+</div>
+
 <!-- bottom nav -->
 <nav class="navbar navbar-fixed-bottom lower-nav">
   <div class="container">
@@ -77,21 +78,42 @@
 
 <!--Bootstrap javascript imports-->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
 <!--  java script control of the list above -->
-<!--<script>
-document.getElementById("add-item").addEventListener("click", function(){
-  var newLi = document.createElement("li");
-  var order = document.getElementById("current-order").getElementsByTagName("ul");
-  var item = document.getElementById("inlineFormProduct");
-  var listStringP = item.options[ item.selectedIndex ].text;
-  var quant = document.getElementById("inlineFormQuantity");
-  var listStringQ = quant.options[ quant.selectedIndex ].text;
-  order.appendChild(newLi);
-  newLi.innerHTML= "listStringP" + "listStringQ";
-});
-</script>-->
+<script>
+  function add_to_order(){
+    var product = jQuery("#produce_select").val();
+    var quantity = jQuery("#quantity_select").val();
+    jQuery.ajax({
+      url: "order.html",
+      data: "product=" + product +"&quantity=" + quantity,
+      success: function(data){
+        jQuery("#table").html(data).load();
+      }
+    });
+  }
+  
+
+
+// document.getElementById("add-item").addEventListener("click", function(){
+//   var newLi = document.createElement("li");
+//   var order = document.getElementById("current-order").getElementsByClass("ul");
+//   var item = document.getElementById("inlineFormProduct");
+//   var listStringP = item.options[ item.selectedIndex ].text;
+//   var quant = document.getElementById("inlineFormQuantity");
+//   var listStringQ = quant.options[ quant.selectedIndex ].text;
+//   order.appendChild(newLi);
+//   newLi.innerHTML= "listStringP" + "listStringQ";
+// });
+</script>
+<script>
+  $(function(){
+    $(document).ready(function(){
+      $("#produce_select").load('produce.txt');
+    });
+  });
+</script>
 </body>
