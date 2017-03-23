@@ -19,3 +19,7 @@ $(document).ready(function() {
   });
 });
 
+document.getElementById('res-id').addEventListener('invalid', function(event) {
+    event.target.setCustomValidity("Please input your 5-digit Restaurant ID")
+}, false);
+

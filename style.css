@@ -148,20 +148,7 @@ p{
 
 }
 
-/*#info{
-  background-position: right;
-  background-size: fill;
-}
-#index{
-  background-size: cover;
-  background-position: center;
-}
-#sign{
-  background-size: fill;
-  background-position: top;
-}*/
-
-.login-form{
+.login-container{
   max-width: 580px;
   padding-top: 70px;
 }
