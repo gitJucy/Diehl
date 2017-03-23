@@ -84,17 +84,17 @@
 
 <!--  java script control of the list above -->
 <script>
-  function add_to_order(){
-    var product = jQuery("#produce_select").val();
-    var quantity = jQuery("#quantity_select").val();
-    jQuery.ajax({
-      url: "order.html",
-      data: "product=" + product +"&quantity=" + quantity,
-      success: function(data){
-        jQuery("#table").html(data).load();
-      }
-    });
-  }
+  // function add_to_order(){
+  //   var product = jQuery("#produce_select").val();
+  //   var quantity = jQuery("#quantity_select").val();
+  //   jQuery.ajax({
+  //     url: "order.html",
+  //     data: "product=" + product +"&quantity=" + quantity,
+  //     success: function(data){
+  //       jQuery("#table").html(data).load();
+  //     }
+  //   });
+  // }
   
 
 
