@@ -46,9 +46,6 @@ a{
   color:rgb(218,218,218);
 }
 /*styling for top nav items*/
-.navbar-fixed-top li{
-  border-left: 4px solid rgba(250,250,250,0.7) ;
-}
 .nav-pills > li > a{
   color:rgb(200,221,199);
   background-color: transparent;
@@ -61,6 +58,9 @@ a{
 .nav-pills>li.active> a:hover{
   background-color: transparent;
   color:rgb(250,250,250);
+  border-left: 4px solid rgba(250,250,250,0.7) ;
+  border-right: 4px solid rgba(250,250,250,0.7) ;
+  border-radius: 10px;
 }
 /*bottom FB icon/ restaurant login styling*/
 .nav-pills.lower-right-nav,
