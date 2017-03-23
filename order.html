@@ -83,16 +83,21 @@
 </nav>
 <!--  java script control of the list above -->
 <script>
-document.getElementById("add-item").addEventListener("click", function(){
-  var newLi = document.createElement("li");
-  var order = document.getElementById("current-order").getElementsByClass("ul");
-  var item = document.getElementById("inlineFormProduct");
-  var listStringP = item.options[ item.selectedIndex ].text;
-  var quant = document.getElementById("inlineFormQuantity");
-  var listStringQ = quant.options[ quant.selectedIndex ].text;
-order.appendChild(newLi);
-newLi.innerHTML= "listStringP" + "listStringQ";
+document.getElementById("add-item").addEventListener('click',function(){
+  // var item = document.getElementById("inlineFormProduct");
+  // var listStringP = item.options[ item.selectedIndex ].text;
+  // var quant = document.getElementById("inlineFormQuantity");
+  // var listStringQ = quant.options[ quant.selectedIndex ].text;
+  var ul = document.getElementById("current-order");
+  var li = document.createElement("li");
+  // var child= ul.child.length+1;
+  li.setAttribute("class","list-group-item");
+  li.appendChild(document.createTextNode(""));
+  li.innerHTML="listStringP+listStringQ";
+  ul.appendChild(li);
+
 });
+
 
 
 </script>
